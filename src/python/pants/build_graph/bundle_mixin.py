@@ -24,7 +24,7 @@ class BundleMixin(TaskBase):
     register('--archive', choices=list(archive.TYPE_NAMES),
              fingerprint=True,
              help='Create an archive of this type from the bundle. '
-                  'This option is also defined in app target. '
+                  'This option is also defined in the jvm_app target. '
                   'Precedence is CLI option > target option > pants.ini option.')
     # `target.id` ensures global uniqueness, this flag is provided primarily for
     # backward compatibility.
